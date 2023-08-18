@@ -7,7 +7,7 @@ const Login = () => {
     const [err, setErr] = useState(false);
     const navigate = useNavigate();
 
-    const handleSubmit = async(e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const email = e.target[0].value;
         const password = e.target[1].value;
@@ -27,7 +27,7 @@ const Login = () => {
             <div className="formWrapper">
                 <span className="logo">Tutor Finder</span>
                 <span className="title">Login</span>
-                <form onSubmit={handleSubmit()}>
+                <form onSubmit={handleSubmit}>
                     <input type="email" placeholder="Email"/>
                     <input type="password" placeholder="Password"/>
                     <button>Sign In</button>
